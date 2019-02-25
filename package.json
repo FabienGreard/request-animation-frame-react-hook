@@ -1,0 +1,101 @@
+{
+  "name": "fakestorejs",
+  "version": "0.0.1",
+  "description": "React hook for using requestAnimationFrame, setTimeout and setInterval with requestAnimationFrame",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "author": "FabienGreard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabienGreard/request-animation-frame-react-hook.git"
+  },
+  "homepage": "https://github.com/FabienGreard/request-animation-frame-react-hook",
+  "scripts": {
+    "build": "ncc build /lib/index.js -m",
+    "test": "jest",
+    "coverage": "jest --coverage --watchAll",
+    "prettier": "prettier --single-quote --write **/*.{js,json,css,md}"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "fluid": false
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "verbose": true,
+    "bail": true,
+    "testMatch": [
+      "**/*.test.js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "lib/*.js",
+      "!lib/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "@babel/transform-runtime"
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.3.4",
+    "@zeit/ncc": "^0.15.2",
+    "babel-jest": "^24.1.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "keywords": [
+    "hooks",
+    "hooks",
+    "react",
+    "setInterval",
+    "setTimeout",
+    "requestAnimationFrame",
+    "interval",
+    "timeout"
+  ]
+}

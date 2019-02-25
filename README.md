@@ -1,2 +1,3 @@
-# request-animation-frame-react-hook
+# request-animation-frame-react-hook [![Build Status](https://travis-ci.org/FabienGreard/request-animation-frame-react-hook.svg?branch=master)](https://travis-ci.org/FabienGreard/request-animation-frame-react-hook)[![install size](https://packagephobia.now.sh/badge?p=request-animation-frame-react-hook)](https://packagephobia.now.sh/result?p=request-animation-frame-react-hook)[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/FabienGreard/request-animation-frame-react-hook.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/FabienGreard/request-animation-frame-react-hook/context:javascript)[![devDependencies Status](https://david-dm.org/FabienGreard/request-animation-frame-react-hook/dev-status.svg)](https://david-dm.org/FabienGreard/request-animation-frame-react-hook?type=dev)
+
 React hook for using requestAnimationFrame, setTimeout and setInterval with requestAnimationFrame
